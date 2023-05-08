@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sparkline Example</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+    </head>
+    <body>
+        <p>
+            <span class="sparkline">
+                170, 134, 115, 128, 168, 166, 122, 81, 56, 39, 97, 114, 114, 130, 151
+            </span>
+            <span style="color:red"> 128 </span>
+            <strong> Glucose </strong>
+        </p>
+        <script>
+            $(function() {
+                $(".sparkline").sparkline();
+            })
+        </script>
+    </body>
+</html>

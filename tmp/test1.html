@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Sparklines Line Chart</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+</head>
+<body>
+    <div id="sparkline"></div>
+    <script>
+        $(function () {
+            var data = [10, 8, 5, 7, 4, 4, 1];
+            $('#sparkline').sparkline(data, {
+                type: 'line',
+                lineColor: '#0099ff',
+                fillColor: '#0099ff',
+                width: '200px',
+                height: '100px',
+                spotColor: '#00ff99',
+                minSpotColor: '#ff0000',
+                maxSpotColor: '#00ff00',
+                highlightSpotColor: '#ffff00',
+                highlightLineColor: '#0000ff',
+                tooltipFormat: 'Value: {{y}}',
+                chartRangeMin: 0,
+                chartRangeMax: 10
+            });
+        });
+    </script>
+</body>
+</html>
